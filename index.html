@@ -2,18 +2,86 @@
 <!--이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다.-->
 <html>
 	<title>구글 메인화면 예제</title>
+	
 	<head>
+		<meta name="author" content="학번">
+		<meta charset="utf-8">
+		<meta name="keywords" content="computer">
+		<base href="https://web--dzvij.run.goorm.site/">
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">전체메뉴</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">홈페이지</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">검색</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            기타 웹사이트
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">지도</a></li>
+            <li><a class="dropdown-item" href="#">메일</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">앱스토어</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">YOUTUBE</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+		
 		<p style="text-align:left;"><b><font size="4em" color="green">문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의</font></b></p>
 		<br> <! br은 줄 바꿈입니다.>
-	<hr> <! hr은 밑줄을 그려줍니다.>
-	</head>
-	<body>
-		<p style="text-align:center"><img src="img/google.png" alt="구글이미지"></p>
+	
+		<p style="text-align:center"><a href="index.html"><img src="img/google.png" alt="구글이미지"></a></p>
 		<! img 태그는 이미지를 삽입합니다. src=경로, 이미지 깨지면 alt 출력>
 		<br><! br은 줄 바꿈입니다.>
 		<p style="text-align:center">검색 : <input type="text" name="search" size="55" value=""><button type="button" onclick="alert('검색을 수행합니다!')">검색</button><br></p><br><br><br><br><br><br> <! 간격을 위해 줄바꿈을 여러번 추가 해줍니다.>
-	<hr> <! hr은 밑줄을 그려줍니다.>
+	
+		
+		<table style="margin-left: auto; margin-right: auto;" border="1" width="500"> <! 테이블을 정의합니다.>
+	<caption>인기 검색어</caption> <! 테이블 제목.>
+	<tbody>
+	<tr><td bgcolor="green" width="50"><b>영화</b></td><td width="80" bgcolor="blue">아저씨</td><td width="80" bgcolor="blue">아저씨</td><td width="100">어머니</td><td width="100">헬머니</td><td>할부지</td></tr> <! 1행 추가.>
+	<tr bgcolor="red"><td width="50">음악</td><td>KPOP</td><td>JPOP</td><td>ROCK1</td><td>ROCK2</td><td rowspan="2">EUROBEAT</td></tr> <! 2행 추가.>
+	<tr bgcolor="red"><td colspan="2" width="50">게임</td><td>LOL</td><td>WOW</td><td>SUDDEN</td></tr> <! 3행 추가.>
+	</tbody>
+</table> 
+		
+		<hr> <! hr은 밑줄을 그려줍니다.>
 		<p style="text-align:right;"><font size="3em" color="red">문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등</font></p>
 	<br> <! br은 줄 바꿈입니다.>
 	</body>
+</html>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>
