@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>구글 메인화면 예제</title>
+</head>
+
+<body>
+  <br>
+  <! br은 줄 바꿈입니다.>
+  <div class="mx-auto" style="width: 500px;">
+    <a href="index.html"><img src="img/google2.png" class="img-fluid" alt="구글이미지"></a>
+  </div>
+  <br>
+  <div class="text-center p-3">
+    <h3 class="text-secondary">회원가입을 환영합니다! 구글 로고를 클릭하면 메인화면으로 돌아갑니다.</h3>
+  </div>
+  <br>
+ <! br은 줄 바꿈입니다.>
+
+  <script src="join.js"></script>
+
+  <script>
+    function readSession() {
+      const storedObject = sessionStorage.getItem("Session_Storage_object");
+      const encryptedText = sessionStorage.getItem("Session_Storage_encrypted");
+      
+      if (storedObject && encryptedText) {
+        const decryptedText = decrypt_text(encryptedText); // 복호화
+        const object = JSON.parse(decryptedText); // JSON 문자열 -> 객체 변환
+        console.log(object);
+      } else {
+        console.log("세션 정보 없음");
+      }
+    }
+    
+     document.addEventListener("DOMContentLoaded", function() {
+      readSession();
+      session_join_get();
+    });
+  </script>
+</body>
+
+</html>
+
+	
+	<br><br><br><br><br><br>
+	
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	
+	 <footer class="bg-light text-center text-lg-start">
+  <div class="text-center p-3" style="background-color:#D8D8D8;">
+    <h3 class="text-secondary">FOOTER TEST</h3>
+    © 2020 Copyright: <a class="text-dark" href="https://꾸글.com/">꾸글.com</a>
+      <i class="bi bi-facebook" style="color: #3b5998; font-size: 2rem;"></i>
+      <i class="bi bi-twitter" style="color: #55acee; font-size: 2rem;"></i>
+      <i class="bi bi-instagram" style="color: #ac2bac; font-size: 2rem;"></i>
+  </div>
+</footer>
+	
+	
